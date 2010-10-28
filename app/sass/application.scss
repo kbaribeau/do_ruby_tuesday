@@ -1,8 +1,8 @@
 $text-color: #333;
+$page-width: 800px;
 
 body {
-	margin-top: 1px;
-	margin-bottom: 25px;
+	margin: 0;
 	padding: 0px;
 	background-color: #f0f0f0;
 	font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
@@ -11,35 +11,53 @@ body {
 }
 
 h1 {
-	font-size: 28px;
+	margin: 0;
 	color: #000;
-	margin: 0px;
-	padding-bottom: 10px;
 }
 
-a {
-	color: #03c;
-}
 
-a:hover {
-	background-color: #03c;
-	color: white;
-	text-decoration: none;
-}
+$blurb-width: 300px;
 
-#content {
+@mixin rounded-box {
 	background-color: white;
-	border: 3px solid #aaa;
-	padding: 25px;
-	width: 500px;
-
-	margin-left: 20px;
-	margin-top: 20px;
+	border-radius: 5em;
+	border: 3px solid firebrick;
 }
 
-#logo {
-	height: 60px;
-	width: 120px;
+#welcome #blurb {
+	@include rounded-box;
+
+	left: $page-width - $blurb-width - 50px;
+	top: 200px;
+	padding: 25px;
+	position: absolute;
+	width: $blurb-width;
+}
+
+#welcome #header #logo {
+	height: 300px;
+	width: $page-width;
+}
+
+#welcome #header {
+}
+
+#welcome #content {
+	margin-top: 20px;
+	width: $page-width;
+}
+
+#welcome #content #leftColumn {
+	@include rounded-box;
+
+	width: 68%;
 	float: left;
+}
+
+#welcome #content #rightColumn {
+	@include rounded-box;
+
+	width: 30%;
+	float: right;
 }
 
