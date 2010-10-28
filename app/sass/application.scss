@@ -22,6 +22,7 @@ $blurb-width: 300px;
 	background-color: white;
 	border-radius: 5em;
 	border: 3px solid firebrick;
+	padding: 15px;
 }
 
 #welcome #blurb {
@@ -29,7 +30,6 @@ $blurb-width: 300px;
 
 	left: $page-width - $blurb-width - 50px;
 	top: 200px;
-	padding: 25px;
 	position: absolute;
 	width: $blurb-width;
 }
@@ -50,14 +50,14 @@ $blurb-width: 300px;
 #welcome #content #leftColumn {
 	@include rounded-box;
 
-	width: 68%;
+	width: 65%;
 	float: left;
 }
 
 #welcome #content #rightColumn {
 	@include rounded-box;
 
-	width: 30%;
+	width: 25%;
 	float: right;
 }
 
