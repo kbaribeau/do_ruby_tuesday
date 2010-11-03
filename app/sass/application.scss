@@ -29,7 +29,7 @@ $blurb-width: 300px;
 	@include rounded-box;
 
 	left: $page-width - $blurb-width - 50px;
-	top: 200px;
+	top: 230px;
 	position: absolute;
 	width: $blurb-width;
 }
