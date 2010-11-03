@@ -47,14 +47,14 @@ $blurb-width: 300px;
 	width: $page-width;
 }
 
-#welcome #content #leftColumn {
+#welcome #content #rulesOfEngagement {
 	@include rounded-box;
 
 	width: 65%;
 	float: left;
 }
 
-#welcome #content #rightColumn {
+#welcome #content #doRubyTuesdayVenues {
 	@include rounded-box;
 
 	width: 25%;
