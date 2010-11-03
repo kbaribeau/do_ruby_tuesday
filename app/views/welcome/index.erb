@@ -42,13 +42,49 @@
 		</div>
 		<div id="doRubyTuesdayVenues">
 			<div id="rules">
-				<li>Meet at a locally owned venue</li>
-				<li>Around 7:30pm local time</li>
-				<li>Do Ruby!</li>
-				<li>Tweet to #dorubytuesday</li>
-				<li>Buy a Do Ruby Tuesday pennant (at cost) and mark your event!</li>
+				<h2>Rules of Engagement</h2>
+				<ul>
+					<li>Meet at a locally owned venue</li>
+					<li>Plant your pennant!</li>
+					<li>Do Ruby!</li>
+					<li>Tweet to #dorubytuesday</li>
+				</ul>
 			</div>
 			<div id="twitterFall">
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+					version: 2,
+					type: 'search',
+					search: '#dorubytuesday',
+					interval: 6000,
+					title: 'Ruby Tuesday!',
+					subject: 'OMG!',
+					width: 250,
+					height: 300,
+					theme: {
+						shell: {
+							background: '#b22222',
+							color: '#ffffff'
+						},
+						tweets: {
+							background: '#ffffff',
+							color: '#444444',
+							links: '#000000'
+						}
+					},
+					features: {
+						scrollbar: false,
+						loop: true,
+						live: true,
+						hashtags: true,
+						timestamp: true,
+						avatars: true,
+						toptweets: true,
+						behavior: 'default'
+					}
+				}).render().start();
+				</script>
 			</div>
 		</div>
 	</div>

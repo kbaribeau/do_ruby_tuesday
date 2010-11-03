@@ -1,5 +1,6 @@
 $text-color: #333;
-$page-width: 800px;
+$page-width: 980px;
+$red: firebrick;
 
 body {
 	margin: 0;
@@ -21,7 +22,7 @@ $blurb-width: 300px;
 @mixin rounded-box {
 	background-color: white;
 	border-radius: 5em;
-	border: 3px solid firebrick;
+	border: 3px solid $red;
 	padding: 15px;
 }
 
@@ -36,7 +37,7 @@ $blurb-width: 300px;
 
 #welcome #header #logo {
 	height: 300px;
-	width: $page-width;
+	width: $page-width - 180px;
 }
 
 #welcome #header {
@@ -59,5 +60,9 @@ $blurb-width: 300px;
 
 	width: 25%;
 	float: right;
+}
+
+#twitterFall {
+	padding-bottom: 25px;
 }
 
