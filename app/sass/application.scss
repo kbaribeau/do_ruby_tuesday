@@ -1,5 +1,6 @@
 $text-color: #333;
 $page-width: 980px;
+$red: firebrick;
 
 body {
 	margin: 0;
@@ -21,7 +22,7 @@ $blurb-width: 300px;
 @mixin rounded-box {
 	background-color: white;
 	border-radius: 5em;
-	border: 3px solid firebrick;
+	border: 3px solid $red;
 	padding: 15px;
 }
 
@@ -62,10 +63,6 @@ $blurb-width: 300px;
 }
 
 #twitterFall {
-	#twtr-widget-1 .twtr-widget {
-		.twtr-hd {
-			color: red;
-		}
-	}
+	padding-bottom: 25px;
 }
 
