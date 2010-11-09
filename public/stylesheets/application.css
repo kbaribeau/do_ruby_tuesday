@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 5px;
   padding: 0px;
   background-color: #f0f0f0;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
@@ -22,7 +22,7 @@ h1 {
 
 #welcome #header #logo {
   height: 300px;
-  width: 800px; }
+  width: 980px; }
 
 #welcome #content {
   margin-top: 20px;
@@ -46,3 +46,23 @@ h1 {
 
 #twitterFall {
   padding-bottom: 25px; }
+
+#menu-row {
+  background-color: firebrick;
+  border-radius: 5em;
+  border: 2px solid gray;
+  padding: 7px;
+  text-align: center;
+  width: 980px; }
+
+.menu-item {
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px dashed white;
+  font-weight: bold; }
+
+.menu-sep {
+  color: white;
+  font-size: 12pt;
+  padding-left: 5%;
+  padding-right: 5%; }
