@@ -59,7 +59,12 @@ h1 {
   cursor: pointer;
   color: white;
   border-bottom: 1px dashed white;
-  font-weight: bold; }
+  font-weight: bold; 
+}
+
+.menu-item a {
+	text-decoration: none;
+}
 
 .menu-sep {
   color: white;
