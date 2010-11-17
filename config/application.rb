@@ -39,6 +39,5 @@ module DoRubyTuesday
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-		Sass::Plugin.options[:template_location] = Haml::Util.rails_root + '/app/sass'
   end
 end
