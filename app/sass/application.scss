@@ -1,9 +1,10 @@
 $text-color: #333;
+$menu-color: white;
 $page-width: 980px;
 $red: firebrick;
 
 body {
-	margin: 0;
+	margin: 5px;
 	padding: 0px;
 	background-color: #f0f0f0;
 	font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
@@ -37,7 +38,7 @@ $blurb-width: 300px;
 
 #welcome #header #logo {
 	height: 300px;
-	width: $page-width - 180px;
+	width: $page-width;
 }
 
 #welcome #header {
@@ -64,5 +65,28 @@ $blurb-width: 300px;
 
 #twitterFall {
 	padding-bottom: 25px;
+}
+
+#menu-row {
+	background-color: $red;
+	border-radius: 5em;
+	border: 2px solid gray;
+	padding: 7px;
+	text-align: center;
+	width: $page-width;
+}
+
+.menu-item {
+	cursor: pointer;
+	color: $menu-color;
+	border-bottom: 1px dashed $menu-color;
+	font-weight: bold;
+}
+
+.menu-sep {
+	color: $menu-color;
+	font-size: 12pt;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
