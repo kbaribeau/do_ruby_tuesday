@@ -1,4 +1,6 @@
 DoRubyTuesday::Application.routes.draw do
+  resources :testimonials
+
 	get "store/show"
 	get "help_wanted/show"
 	get "testimonials/show"
