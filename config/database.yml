@@ -15,6 +15,8 @@ test:
   pool: 5
   timeout: 5000
 
+
+#IGNORED by heroku, see: http://docs.heroku.com/database
 production:
   adapter: sqlite3
   database: db/production.sqlite3
