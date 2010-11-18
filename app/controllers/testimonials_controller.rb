@@ -1,4 +1,4 @@
-class TestimonialController < ApplicationController
+class TestimonialsController < ApplicationController
 	def show
     render "show", :layout => true
 	end

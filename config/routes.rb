@@ -1,7 +1,7 @@
 DoRubyTuesday::Application.routes.draw do
 	get "store/show"
 	get "help_wanted/show"
-	get "testimonial/show"
+	get "testimonials/show"
   get "contact/show"
 
   # The priority is based upon order of creation:
