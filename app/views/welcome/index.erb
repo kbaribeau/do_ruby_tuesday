@@ -4,11 +4,9 @@
 	</div>
 
 	<div id="menu-row">
-		<span class="menu-item">do_ruby Ideas</span>
-		<span class="menu-sep">|</span>
 		<span class="menu-item">Store</span>
 		<span class="menu-sep">|</span>
-		<span class="menu-item">Help Wanted</span>
+		<span class="menu-item"><%= link_to "Help Wanted", help_wanted_show_path, :class => 'menu-item' %></span>
 		<span class="menu-sep">|</span>
 		<span class="menu-item"><%= link_to "Testimonials", testimonial_show_path, :class => 'menu-item' %></span>
 		<span class="menu-sep">|</span>
