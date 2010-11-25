@@ -4,6 +4,12 @@ gem 'rails', '3.0.1'
 gem 'haml'
 gem 'hassle', :git => 'https://github.com/koppen/hassle.git'
 
+
+group :development do
+	gem 'ruby-debug'
+	gem 'wirble'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -13,9 +19,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
 
 # Bundle the extra gems:
 # gem 'bj'
