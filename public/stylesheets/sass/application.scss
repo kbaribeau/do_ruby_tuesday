@@ -1,59 +1,72 @@
+$main_color: firebrick;
+
 body {
   margin: 5px;
   padding: 0px;
   background-color: #f0f0f0;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
   font-size: 13px;
-  color: #333333; }
+  color: #333333; 
+}
 
 h1 {
   margin: 0;
-  color: #000; }
+  color: #000; 
+}
 
-#welcome #blurb {
-  background-color: white;
-  border-radius: 5em;
-  border: 3px solid firebrick;
-  padding: 15px;
-  left: 630px;
-  top: 230px;
-  position: absolute;
-  width: 300px; }
+#welcome {
+	#blurb {
+		background-color: white;
+		border-radius: 5em;
+		border: 3px solid $main_color;
+		padding: 15px;
+		left: 630px;
+		top: 230px;
+		position: absolute;
+		width: 300px; 
+	}
 
-#welcome #header #logo {
-  height: 300px;
-  width: 980px; }
+	#header #logo {
+		height: 300px;
+		width: 980px; 
+	}
 
-#welcome #content {
-  margin-top: 20px;
-  width: 980px; }
+	#content {
+		margin-top: 20px;
+		width: 980px; 
 
-#welcome #content #rulesOfEngagement {
-  background-color: white;
-  border-radius: 5em;
-  border: 3px solid firebrick;
-  padding: 15px;
-  width: 65%;
-  float: left; }
+		#rulesOfEngagement {
+			background-color: white;
+			border-radius: 5em;
+			border: 3px solid $main_color;
+			padding: 15px;
+			width: 65%;
+			float: left; 
+		}
 
-#welcome #content #doRubyTuesdayVenues {
-  background-color: white;
-  border-radius: 5em;
-  border: 3px solid firebrick;
-  padding: 15px;
-  width: 25%;
-  float: right; }
+		#doRubyTuesdayVenues {
+			background-color: white;
+			border-radius: 5em;
+			border: 3px solid $main_color;
+			padding: 15px;
+			width: 25%;
+			float: right; 
+		}
+	}
+}
 
 #twitterFall {
-  padding-bottom: 25px; }
+  padding-bottom: 25px; 
+}
 
 #menu-row {
-  background-color: firebrick;
+  background-color: $main_color;
   border-radius: 5em;
   border: 2px solid gray;
   padding: 7px;
   text-align: center;
-  width: 980px; }
+  width: 980px; 
+}
 
 .menu-item {
   cursor: pointer;
@@ -70,4 +83,6 @@ h1 {
   color: white;
   font-size: 12pt;
   padding-left: 8%;
-  padding-right: 8%; }
+  padding-right: 8%; 
+
+}
