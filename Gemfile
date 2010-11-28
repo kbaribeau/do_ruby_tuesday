@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
 gem 'haml'
-gem 'hassle', :git => 'https://github.com/koppen/hassle.git'
+gem 'hassle', :git => 'git@github.com:kbaribeau/hassle.git'
 
 
 group :development do

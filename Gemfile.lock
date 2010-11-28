@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/koppen/hassle.git
-  revision: a08c757bce033cebc7ef8a4a3a831127afcb956a
+  remote: git@github.com:kbaribeau/hassle.git
+  revision: bfada4a693a0c13c793bd61f6346a40c17781ce4
   specs:
     hassle (0.0.1)
       haml
