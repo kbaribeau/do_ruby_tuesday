@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:kbaribeau/hassle.git
+  remote: git://github.com/kbaribeau/hassle.git
   revision: bfada4a693a0c13c793bd61f6346a40c17781ce4
   specs:
     hassle (0.0.1)
@@ -50,6 +50,7 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    oauth (0.4.4)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -88,6 +89,7 @@ PLATFORMS
 DEPENDENCIES
   haml
   hassle!
+  oauth (>= 0.4.4)
   rails (= 3.0.1)
   ruby-debug
   sqlite3-ruby
