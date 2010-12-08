@@ -4,6 +4,8 @@ DoRubyTuesday::Application.routes.draw do
 	get "store/show"
 	get "help_wanted/show"
   get "contact/show"
+	get "auth/index"
+	get "auth/callback"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

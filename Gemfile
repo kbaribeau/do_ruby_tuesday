@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.1'
 gem 'haml'
 gem 'hassle', :git => 'git://github.com/kbaribeau/hassle.git'
+gem 'twitter_oauth', '>= 0.4.3'
 
 
 group :development do
