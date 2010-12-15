@@ -1,17 +1,5 @@
 require 'net/http'
 
-Net::HTTP.module_eval do
-	unless $http_debugged
-		alias_method '__initialize__', 'initialize'
-		def initialize(*args,&block)
-			__initialize__(*args, &block)
-		ensure
-			@debug_output = $stdout ### if ENV['HTTP_DEBUG']
-		end 
-	end
-	$http_debugged = true
-end
-
 class AuthController < ApplicationController
 	def initialize
 		if @client.nil?
@@ -35,7 +23,7 @@ class AuthController < ApplicationController
 		@access_token = @client.authorize(
 			session[:request_token],
 			session[:request_token_secret],
-			:oauth_verifier => params[:oauth_verifier]
+			:oauth_verifier => params[:oauth_verifier]	
 		)
 
 		if @client.authorized?
