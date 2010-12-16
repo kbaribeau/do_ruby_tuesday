@@ -11,11 +11,6 @@ class TestimonialsControllerTest < ActionController::TestCase
     assert_not_nil assigns(:testimonials)
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   test "should create testimonial" do
     assert_difference('Testimonial.count') do
       post :create, :testimonial => @testimonial.attributes
