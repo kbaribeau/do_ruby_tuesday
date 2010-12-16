@@ -10,11 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101118021144) do
+ActiveRecord::Schema.define(:version => 20101124023114) do
 
   create_table "testimonials", :force => true do |t|
     t.string   "name"
     t.string   "quote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "twitter_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
