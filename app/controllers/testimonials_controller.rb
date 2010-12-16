@@ -24,6 +24,10 @@ class TestimonialsController < ApplicationController
   # GET /testimonials/new
   # GET /testimonials/new.xml
   def new
+		if session[:user].nil?
+			redirect_to :controller => 'unauthorized', :action => 'unauthorized'
+			return
+		end
     @testimonial = Testimonial.new
 
     respond_to do |format|

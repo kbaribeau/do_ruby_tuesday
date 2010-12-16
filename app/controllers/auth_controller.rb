@@ -29,10 +29,23 @@ class AuthController < ApplicationController
 		if @client.authorized?
 			session[:access_token] = @access_token.token
 			session[:secret_token] = @access_token.secret
-			session[:user] = true
+			session[:user] = create_user_from_twitter(@client)
 			redirect_to '/'
 		else
 			redirect_to 'failed'
 		end
+	end
+
+	def logout
+		session[:user] = nil
+		redirect_to '/'
+	end
+
+private
+	def create_user_from_twitter(client)
+		user = User.new
+		user.name = client.info["screen_name"]
+		user.profile_image = client.info["profile_image_url"]
+		user
 	end
 end

@@ -6,6 +6,8 @@ DoRubyTuesday::Application.routes.draw do
   get "contact/show"
 	get "auth/index"
 	get "auth/callback"
+	get "auth/logout"
+	get "unauthorized/unauthorized"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
